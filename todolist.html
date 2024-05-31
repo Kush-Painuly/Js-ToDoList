@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./todolist.css" />
+    <script
+      src="https://kit.fontawesome.com/6f9d4f9091.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1>TODO LIST</h1>
+    <div class="container">
+      <input
+        type="text"
+        name="search"
+        placeholder="search something"
+        onkeyup="searchTodoHandler(this)"
+      />
+      <ul>
+        <!-- <li>
+          <span>WRITE HTML</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#000000"
+            viewBox="0 0 256 256"
+            onclick="deleteElement(this)"
+          >
+            <path
+              d="M216,48H176V40a24,24,0,0,0-24-24H104A24,24,0,0,0,80,40v8H40a8,8,0,0,0,0,16h8V208a16,16,0,0,0,16,16H192a16,16,0,0,0,16-16V64h8a8,8,0,0,0,0-16ZM96,40a8,8,0,0,1,8-8h48a8,8,0,0,1,8,8v8H96Zm96,168H64V64H192ZM112,104v64a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Zm48,0v64a8,8,0,0,1-16,0V104a8,8,0,0,1,16,0Z"
+            ></path>
+          </svg>
+          
+        </li> -->
+      </ul>
+      <form id="add_todo" onsubmit="SubmitTodoHandler(event)">
+        <input type="text" name="add" placeholder="Add todos..." />
+      </form>
+    </div>
+    <script src="todolist.js"></script>
+  </body>
+</html>
